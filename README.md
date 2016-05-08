@@ -2,9 +2,10 @@
 Smali Files For SMS Verification Fix In WhatsApp (Modded)
 
 # Adding
-1 -: Decompile Official Whatsapp v2.16.66 Apk.
-2 -: Goto Smali Folder And Paste This Files.
-3 -: Recompile Apk Again. .......... *Done* 
+1. Decompile Your Modded Whatsapp Apk.
+2. Goto Smali Folder And Paste This Files.
+3. Recompile Apk Again. 
+.......... *Done* 
 
 # *_Note:_*
 1) This Patch Works On WhatsApp v2.16.66 
