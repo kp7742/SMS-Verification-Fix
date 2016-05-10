@@ -8,5 +8,5 @@ Smali Files For SMS Verification Fix In WhatsApp (Modded)
 .......... *Done* 
 
 # *_Note:_*
-1. This Patch Works On WhatsApp v2.16.66 
+1. This Patch Diffrent For Each WhatsApp Version.  
 2. Please Give Me Credit If You Publish Your Mod.
