@@ -4,11 +4,11 @@
 
 
 # static fields
-.field private static a:Landroid/graphics/Typeface;
+.field public static a:Z
 
 .field private static b:I
 
-.field public static c:Z
+.field private static c:Landroid/graphics/Typeface;
 
 .field private static final z:Ljava/lang/String;
 
@@ -18,7 +18,7 @@
     .locals 5
 
     .prologue
-    const-string/jumbo v0, "-~)>tdC((h?~\n%i$<\u0015/`>}&8)?e!"
+    const-string/jumbo v0, "Qp\u0008=_\u0018M\t+CCp+&BX24,KBs\u0007;\u0002Ck\u0000"
 
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
 
@@ -45,18 +45,14 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kmods/Utils;->ChangeP(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
     sput-object v0, Lcom/whatsapp/registration/CodeInputField;->z:Ljava/lang/String;
 
-    .line 2
+    .line 26
     const/4 v0, 0x0
 
-    sput-object v0, Lcom/whatsapp/registration/CodeInputField;->a:Landroid/graphics/Typeface;
+    sput-object v0, Lcom/whatsapp/registration/CodeInputField;->c:Landroid/graphics/Typeface;
 
-    .line 23
+    .line 27
     const/4 v0, 0x6
 
     sput v0, Lcom/whatsapp/registration/CodeInputField;->b:I
@@ -71,7 +67,7 @@
 
     packed-switch v0, :pswitch_data_0
 
-    const/4 v0, 0x7
+    const/16 v0, 0x2c
 
     :goto_1
     xor-int/2addr v0, v4
@@ -87,24 +83,26 @@
     goto :goto_0
 
     :pswitch_0
-    const/16 v0, 0x4b
+    const/16 v0, 0x37
 
     goto :goto_1
 
     :pswitch_1
-    const/16 v0, 0x11
+    const/16 v0, 0x1f
 
     goto :goto_1
 
     :pswitch_2
-    const/16 v0, 0x47
+    const/16 v0, 0x66
 
     goto :goto_1
 
     :pswitch_3
-    const/16 v0, 0x4a
+    const/16 v0, 0x49
 
     goto :goto_1
+
+    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -119,10 +117,10 @@
     .locals 0
 
     .prologue
-    .line 29
+    .line 8
     invoke-direct {p0, p1}, Landroid/widget/EditText;-><init>(Landroid/content/Context;)V
 
-    .line 10
+    .line 9
     return-void
 .end method
 
@@ -130,10 +128,10 @@
     .locals 0
 
     .prologue
-    .line 27
+    .line 17
     invoke-direct {p0, p1, p2}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
-    .line 8
+    .line 15
     return-void
 .end method
 
@@ -141,7 +139,7 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 30
     invoke-direct {p0, p1, p2, p3}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 18
@@ -155,7 +153,7 @@
     .end annotation
 
     .prologue
-    .line 19
+    .line 29
     invoke-direct {p0, p1, p2, p3, p4}, Landroid/widget/EditText;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;II)V
 
     .line 24
@@ -172,14 +170,14 @@
     .end annotation
 
     .prologue
-    .line 6
+    .line 21
     invoke-interface {p0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
 
     move-result-object v0
 
     const/16 v1, 0x2013
 
-    .line 7
+    .line 13
     invoke-static {v1}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
     move-result-object v1
@@ -192,7 +190,7 @@
 
     const/16 v1, 0xa0
 
-    .line 30
+    .line 14
     invoke-static {v1}, Ljava/lang/Character;->toString(C)Ljava/lang/String;
 
     move-result-object v1
@@ -206,17 +204,27 @@
     return-object v0
 .end method
 
-.method private a()V
+.method static b()I
+    .locals 1
+
+    .prologue
+    .line 23
+    sget v0, Lcom/whatsapp/registration/CodeInputField;->b:I
+
+    return v0
+.end method
+
+.method private c()V
     .locals 2
 
     .prologue
-    .line 17
-    sget-object v0, Lcom/whatsapp/registration/CodeInputField;->a:Landroid/graphics/Typeface;
+    .line 22
+    sget-object v0, Lcom/whatsapp/registration/CodeInputField;->c:Landroid/graphics/Typeface;
 
     if-nez v0, :cond_0
 
-    .line 22
-    invoke-static {}, Lcom/whatsapp/App;->aO()Landroid/app/Application;
+    .line 10
+    invoke-static {}, Lcom/whatsapp/App;->E()Landroid/app/Application;
 
     move-result-object v0
 
@@ -230,26 +238,16 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/registration/CodeInputField;->a:Landroid/graphics/Typeface;
+    sput-object v0, Lcom/whatsapp/registration/CodeInputField;->c:Landroid/graphics/Typeface;
 
-    .line 14
+    .line 1
     :cond_0
-    sget-object v0, Lcom/whatsapp/registration/CodeInputField;->a:Landroid/graphics/Typeface;
+    sget-object v0, Lcom/whatsapp/registration/CodeInputField;->c:Landroid/graphics/Typeface;
 
     invoke-virtual {p0, v0}, Lcom/whatsapp/registration/CodeInputField;->setTypeface(Landroid/graphics/Typeface;)V
 
-    .line 31
+    .line 2
     return-void
-.end method
-
-.method static c()I
-    .locals 1
-
-    .prologue
-    .line 20
-    sget v0, Lcom/whatsapp/registration/CodeInputField;->b:I
-
-    return v0
 .end method
 
 .method public static setRegistrationVoiceCodeLength(I)V
@@ -259,67 +257,19 @@
     .line 4
     sput p0, Lcom/whatsapp/registration/CodeInputField;->b:I
 
-    .line 21
+    .line 3
     return-void
 .end method
 
 
 # virtual methods
-.method public a(Lcom/whatsapp/VerifySms;)V
-    .locals 3
-    .param p1    # Lcom/whatsapp/VerifySms;
-        .annotation build Landroid/support/annotation/NonNull;
-        .end annotation
-    .end param
-
-    .prologue
-    sget-boolean v0, Lcom/whatsapp/registration/CodeInputField;->c:Z
-
-    .line 28
-    new-instance v1, Lcom/whatsapp/registration/a;
-
-    const/4 v2, 0x0
-
-    invoke-direct {v1, p1, p0, v2}, Lcom/whatsapp/registration/a;-><init>(Lcom/whatsapp/VerifySms;Lcom/whatsapp/registration/CodeInputField;Lcom/whatsapp/registration/c;)V
-
-    invoke-virtual {p0, v1}, Lcom/whatsapp/registration/CodeInputField;->addTextChangedListener(Landroid/text/TextWatcher;)V
-
-    .line 11
-    const-string/jumbo v1, ""
-
-    invoke-virtual {p0, v1}, Lcom/whatsapp/registration/CodeInputField;->setText(Ljava/lang/CharSequence;)V
-
-    .line 26
-    invoke-direct {p0}, Lcom/whatsapp/registration/CodeInputField;->a()V
-
-    .line 12
-    sget-boolean v1, Lcom/whatsapp/WAAppCompatActivity;->c:Z
-
-    if-eqz v1, :cond_0
-
-    if-eqz v0, :cond_1
-
-    const/4 v0, 0x0
-
-    :goto_0
-    sput-boolean v0, Lcom/whatsapp/registration/CodeInputField;->c:Z
-
-    :cond_0
-    return-void
-
-    :cond_1
-    const/4 v0, 0x1
-
-    goto :goto_0
-.end method
-
-.method public b()Ljava/lang/String;
+.method public a()Ljava/lang/String;
     .locals 1
     .annotation build Landroid/support/annotation/NonNull;
     .end annotation
 
     .prologue
-    .line 13
+    .line 16
     invoke-virtual {p0}, Lcom/whatsapp/registration/CodeInputField;->getText()Landroid/text/Editable;
 
     move-result-object v0
@@ -331,14 +281,62 @@
     return-object v0
 .end method
 
+.method public a(Lcom/whatsapp/VerifySms;)V
+    .locals 3
+    .param p1    # Lcom/whatsapp/VerifySms;
+        .annotation build Landroid/support/annotation/NonNull;
+        .end annotation
+    .end param
+
+    .prologue
+    sget-boolean v0, Lcom/whatsapp/registration/CodeInputField;->a:Z
+
+    .line 31
+    new-instance v1, Lcom/whatsapp/registration/a;
+
+    const/4 v2, 0x0
+
+    invoke-direct {v1, p1, p0, v2}, Lcom/whatsapp/registration/a;-><init>(Lcom/whatsapp/VerifySms;Lcom/whatsapp/registration/CodeInputField;Lcom/whatsapp/registration/c;)V
+
+    invoke-virtual {p0, v1}, Lcom/whatsapp/registration/CodeInputField;->addTextChangedListener(Landroid/text/TextWatcher;)V
+
+    .line 5
+    const-string/jumbo v1, ""
+
+    invoke-virtual {p0, v1}, Lcom/whatsapp/registration/CodeInputField;->setText(Ljava/lang/CharSequence;)V
+
+    .line 19
+    invoke-direct {p0}, Lcom/whatsapp/registration/CodeInputField;->c()V
+
+    .line 20
+    sget-boolean v1, Lcom/whatsapp/WAAppCompatActivity;->c:Z
+
+    if-eqz v1, :cond_0
+
+    if-eqz v0, :cond_1
+
+    const/4 v0, 0x0
+
+    :goto_0
+    sput-boolean v0, Lcom/whatsapp/registration/CodeInputField;->a:Z
+
+    :cond_0
+    return-void
+
+    :cond_1
+    const/4 v0, 0x1
+
+    goto :goto_0
+.end method
+
 .method protected onSelectionChanged(II)V
     .locals 2
 
     .prologue
-    .line 9
+    .line 11
     if-ne p1, p2, :cond_0
 
-    .line 1
+    .line 7
     invoke-virtual {p0}, Lcom/whatsapp/registration/CodeInputField;->getText()Landroid/text/Editable;
 
     move-result-object v0
@@ -353,20 +351,20 @@
 
     move-result v0
 
-    .line 5
+    .line 12
     const/4 v1, -0x1
 
     if-le v0, v1, :cond_0
 
     if-le p1, v0, :cond_0
 
-    .line 3
+    .line 28
     invoke-virtual {p0, v0}, Lcom/whatsapp/registration/CodeInputField;->setSelection(I)V
 
-    .line 16
+    .line 6
     :cond_0
     invoke-super {p0, p1, p2}, Landroid/widget/EditText;->onSelectionChanged(II)V
 
-    .line 15
+    .line 25
     return-void
 .end method

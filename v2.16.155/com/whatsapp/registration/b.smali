@@ -4,17 +4,17 @@
 
 
 # static fields
-.field private static final d:[B
+.field private static final a:[B
 
 .field private static final z:[Ljava/lang/String;
 
 
 # instance fields
-.field private a:I
-
 .field private final b:[B
 
 .field private c:Z
+
+.field private d:I
 
 
 # direct methods
@@ -36,7 +36,7 @@
 
     new-array v7, v0, [Ljava/lang/String;
 
-    const-string/jumbo v6, "O]t\u000c\rDSmQ\u001b\\B"
+    const-string/jumbo v6, "D9\u0005pg"
 
     const/4 v0, -0x1
 
@@ -70,15 +70,11 @@
 
     move-result-object v6
 
-    invoke-static {v6}, Lcom/kmods/Utils;->ChangeP(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v6
-
     packed-switch v0, :pswitch_data_0
 
     aput-object v6, v8, v7
 
-    const-string/jumbo v0, "yf_\u000fB"
+    const-string/jumbo v0, "p\u000f,(+N\u0001,:0?\u001d-:"
 
     move-object v6, v0
 
@@ -93,7 +89,7 @@
     :pswitch_0
     aput-object v6, v8, v7
 
-    const-string/jumbo v0, "yf_\u000fB"
+    const-string/jumbo v0, ">\u001f&.pu\u001f\"*>s\u0001&p7u\u001d*p)%B\"?0d\u0019\u001c10v\u0002m-1v"
 
     move-object v6, v0
 
@@ -108,7 +104,7 @@
     :pswitch_1
     aput-object v6, v8, v7
 
-    const-string/jumbo v0, "\u0003@|QUH@xU\u001bN^|\u000f\u0012HBp\u000f\u000c\u0018\u001dx@\u0015YFFN\u0015K]7R\u0014K"
+    const-string/jumbo v0, "r\u0002.s(y\u000c7.>a\u001d"
 
     move-object v6, v0
 
@@ -123,7 +119,7 @@
     :pswitch_2
     aput-object v6, v8, v7
 
-    const-string/jumbo v0, "d\u007fXa)ds("
+    const-string/jumbo v0, "Y \u0002\u001e\u000cY,r"
 
     move-object v6, v0
 
@@ -140,7 +136,7 @@
 
     const/4 v6, 0x5
 
-    const-string/jumbo v0, "MPvW\u000es^vE\u0015\u0002BwE"
+    const-string/jumbo v0, "D9\u0005pg"
 
     move v7, v6
 
@@ -157,7 +153,7 @@
 
     const/4 v7, 0x6
 
-    const-string/jumbo v6, "\u0003@|QUH@xU\u001bN^|\u000f\u0012HBp\r\u001bN]lV%@]~MT\\\\~"
+    const-string/jumbo v6, ">\u001f&.pu\u001f\"*>s\u0001&p7u\u001d*r>s\u00026)\u0000}\u0002$2qa\u0003$"
 
     const/4 v0, 0x5
 
@@ -170,8 +166,8 @@
 
     sput-object v9, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    .line 54
-    const-string/jumbo v0, "|YMU1\u007fhhw\u001cmg`pJ^bH\u001a\u0012ux)U4_cH\u0011\u001e{\u00032\u0011)o\\`v\"eT\\c\u0002Ta.\u0017<[Y]DN\u001bEWTUO\nirI\\\u0002^z1~\u0004Vm+AZ`g([J.\u0016\u001c[\u0003K{)y\u0003)kN^\u0003~[8zv{p0\u0018\u0002iK\u001eF\u007f-\u0013=\u001d{(M4"
+    .line 10
+    const-string/jumbo v0, "A\u0006\u0017*\u0014B72\u00089P8:\u000foc=\u0012e7H\'s*\u0011b<\u0012n;F\\hn\u000cR\u0003:\t\u0007X\u000b\u0006\u001c\'i>th\u0019f\u0006\u0007;k&\u001a\r+prU3\rla]\u0004\u0005\u0014C[\u000c\u0012\u000e|\u0005:\u0018\rf\u0015ti9f\\\u0011\u0004\u000cD\\s\u0014kc\\$$\u001dG)!\u000f\u0015%]34;{ wl\u0018 $r2\u0011"
 
     .line 4294967295
     invoke-virtual {v0}, Ljava/lang/String;->toCharArray()[C
@@ -197,16 +193,12 @@
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/kmods/Utils;->ChangeP(Ljava/lang/String;)Ljava/lang/String;
-
-    move-result-object v0
-
-    .line 54
+    .line 10
     invoke-static {v0, v1}, Landroid/backport/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object v0
 
-    sput-object v0, Lcom/whatsapp/registration/b;->d:[B
+    sput-object v0, Lcom/whatsapp/registration/b;->a:[B
 
     return-void
 
@@ -218,7 +210,7 @@
 
     packed-switch v6, :pswitch_data_1
 
-    const/16 v6, 0x7a
+    const/16 v6, 0x5f
 
     :goto_3
     xor-int/2addr v6, v13
@@ -231,25 +223,25 @@
 
     move v12, v6
 
-    goto/16 :goto_1
+    goto :goto_1
 
     :pswitch_6
-    const/16 v6, 0x2c
+    const/16 v6, 0x11
 
     goto :goto_3
 
     :pswitch_7
-    const/16 v6, 0x32
+    const/16 v6, 0x6d
 
     goto :goto_3
 
     :pswitch_8
-    const/16 v6, 0x19
+    const/16 v6, 0x43
 
     goto :goto_3
 
     :pswitch_9
-    const/16 v6, 0x22
+    const/16 v6, 0x5d
 
     goto :goto_3
 
@@ -260,7 +252,7 @@
 
     packed-switch v0, :pswitch_data_2
 
-    const/16 v0, 0x7a
+    const/16 v0, 0x5f
 
     :goto_4
     xor-int/2addr v0, v5
@@ -276,26 +268,24 @@
     goto :goto_2
 
     :pswitch_a
-    const/16 v0, 0x2c
+    const/16 v0, 0x11
 
     goto :goto_4
 
     :pswitch_b
-    const/16 v0, 0x32
+    const/16 v0, 0x6d
 
     goto :goto_4
 
     :pswitch_c
-    const/16 v0, 0x19
+    const/16 v0, 0x43
 
     goto :goto_4
 
     :pswitch_d
-    const/16 v0, 0x22
+    const/16 v0, 0x5d
 
     goto :goto_4
-
-    nop
 
     :pswitch_data_0
     .packed-switch 0x0
@@ -328,13 +318,13 @@
     .locals 0
 
     .prologue
-    .line 25
+    .line 40
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 72
+    .line 5
     iput-object p1, p0, Lcom/whatsapp/registration/b;->b:[B
 
-    .line 30
+    .line 44
     return-void
 .end method
 
@@ -344,21 +334,21 @@
     .end annotation
 
     .prologue
-    const/4 v2, 0x2
+    const/4 v6, 0x2
 
     const/4 v0, 0x0
 
     const/4 v7, 0x3
 
-    sget-boolean v3, Lcom/whatsapp/registration/CodeInputField;->c:Z
+    sget-boolean v3, Lcom/whatsapp/registration/CodeInputField;->a:Z
 
-    .line 19
+    .line 22
     :try_start_0
-    sget v1, Lcom/whatsapp/App;->I:I
+    sget v1, Lcom/whatsapp/App;->an:I
 
-    if-ne v1, v2, :cond_0
+    if-ne v1, v6, :cond_0
 
-    .line 50
+    .line 62
     new-instance v0, Lcom/whatsapp/registration/b;
 
     const/16 v1, 0x14
@@ -377,24 +367,24 @@
 
     throw v0
 
-    .line 28
+    .line 74
     :cond_0
     new-instance v4, Ljava/io/ByteArrayOutputStream;
 
     invoke-direct {v4}, Ljava/io/ByteArrayOutputStream;-><init>()V
 
-    .line 1
+    .line 47
     invoke-virtual {p0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;
 
     move-result-object v1
 
-    .line 12
+    .line 60
     if-eqz v1, :cond_1
 
     :try_start_1
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x0
+    const/4 v5, 0x3
 
     aget-object v2, v2, v5
 
@@ -406,7 +396,7 @@
 
     if-nez v2, :cond_2
 
-    .line 66
+    .line 71
     :cond_1
     :try_start_2
     new-instance v0, Ljava/lang/AssertionError;
@@ -422,7 +412,7 @@
 
     throw v0
 
-    .line 12
+    .line 60
     :catch_2
     move-exception v0
 
@@ -431,12 +421,12 @@
     :try_end_3
     .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
 
-    .line 15
+    .line 8
     :cond_2
     :try_start_4
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x1
+    const/4 v5, 0x5
 
     aget-object v2, v2, v5
 
@@ -448,7 +438,7 @@
     :try_end_4
     .catch Ljava/io/IOException; {:try_start_4 .. :try_end_4} :catch_4
 
-    .line 73
+    .line 6
     const-class v1, Lcom/whatsapp/registration/b;
 
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
@@ -461,74 +451,74 @@
 
     move-result-object v1
 
-    .line 14
+    .line 27
     if-nez v1, :cond_3
 
-    .line 17
+    .line 38
     const-class v1, Lcom/whatsapp/registration/b;
 
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    aget-object v2, v2, v7
+    aget-object v2, v2, v6
 
     invoke-virtual {v1, v2}, Ljava/lang/Class;->getResourceAsStream(Ljava/lang/String;)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 62
+    .line 56
     :cond_3
     if-nez v1, :cond_4
 
     :try_start_5
-    sget v2, Lcom/whatsapp/App;->g:I
+    sget v2, Lcom/whatsapp/App;->A:I
     :try_end_5
     .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_5
 
     if-ge v2, v7, :cond_4
 
-    .line 56
+    .line 24
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
-    .line 68
+    .line 84
     new-instance v2, Landroid/util/DisplayMetrics;
 
     invoke-direct {v2}, Landroid/util/DisplayMetrics;-><init>()V
 
-    .line 40
+    .line 52
     invoke-virtual {v2}, Landroid/util/DisplayMetrics;->setToDefaults()V
 
-    .line 4
+    .line 50
     const/high16 v5, 0x3fc00000    # 1.5f
 
     iput v5, v2, Landroid/util/DisplayMetrics;->density:F
 
-    .line 13
+    .line 83
     const/16 v5, 0xf0
 
     iput v5, v2, Landroid/util/DisplayMetrics;->densityDpi:I
 
-    .line 21
+    .line 28
     iget v5, v2, Landroid/util/DisplayMetrics;->density:F
 
     iput v5, v2, Landroid/util/DisplayMetrics;->scaledDensity:F
 
-    .line 3
+    .line 4
     iget v5, v2, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float v5, v5
 
     iput v5, v2, Landroid/util/DisplayMetrics;->xdpi:F
 
-    .line 29
+    .line 39
     iget v5, v2, Landroid/util/DisplayMetrics;->densityDpi:I
 
     int-to-float v5, v5
 
     iput v5, v2, Landroid/util/DisplayMetrics;->ydpi:F
 
-    .line 35
+    .line 30
     new-instance v5, Landroid/content/res/Resources;
 
     invoke-virtual {v1}, Landroid/content/res/Resources;->getAssets()Landroid/content/res/AssetManager;
@@ -541,25 +531,25 @@
 
     invoke-direct {v5, v6, v2, v1}, Landroid/content/res/Resources;-><init>(Landroid/content/res/AssetManager;Landroid/util/DisplayMetrics;Landroid/content/res/Configuration;)V
 
-    .line 37
+    .line 70
     const v1, 0x7f020045
 
     invoke-virtual {v5, v1}, Landroid/content/res/Resources;->openRawResource(I)Ljava/io/InputStream;
 
     move-result-object v1
 
-    .line 16
+    .line 81
     :cond_4
     if-nez v1, :cond_d
 
     :try_start_6
-    sget v2, Lcom/whatsapp/App;->g:I
+    sget v2, Lcom/whatsapp/App;->A:I
     :try_end_6
     .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_6
 
     if-lt v2, v7, :cond_d
 
-    .line 22
+    .line 1
     :try_start_7
     invoke-virtual {p0}, Landroid/content/Context;->getAssets()Landroid/content/res/AssetManager;
 
@@ -567,7 +557,7 @@
 
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    const/4 v5, 0x5
+    const/4 v5, 0x1
 
     aget-object v2, v2, v5
 
@@ -579,11 +569,11 @@
 
     move-object v2, v1
 
-    .line 52
+    .line 48
     :goto_1
     if-nez v2, :cond_5
 
-    .line 23
+    .line 34
     :try_start_8
     new-instance v0, Ljava/lang/AssertionError;
 
@@ -598,47 +588,47 @@
 
     throw v0
 
-    .line 75
+    .line 58
     :catch_4
     move-exception v0
 
-    .line 20
+    .line 55
     new-instance v1, Ljava/lang/Error;
 
     invoke-direct {v1, v0}, Ljava/lang/Error;-><init>(Ljava/lang/Throwable;)V
 
     throw v1
 
-    .line 62
+    .line 56
     :catch_5
     move-exception v0
 
     throw v0
 
-    .line 16
+    .line 81
     :catch_6
     move-exception v0
 
     throw v0
 
-    .line 10
+    .line 69
     :catch_7
     move-exception v0
 
-    .line 38
+    .line 65
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v1
 
-    .line 59
+    .line 23
     :cond_5
     const/16 v1, 0x2000
 
     new-array v5, v1, [B
 
-    .line 32
+    .line 54
     :try_start_9
     invoke-virtual {v2, v5}, Ljava/io/InputStream;->read([B)I
 
@@ -649,12 +639,12 @@
 
     if-eq v1, v6, :cond_7
 
-    .line 6
+    .line 36
     const/4 v6, 0x0
 
     invoke-virtual {v4, v5, v6, v1}, Ljava/io/ByteArrayOutputStream;->write([BII)V
 
-    .line 11
+    .line 12
     invoke-virtual {v2, v5}, Ljava/io/InputStream;->read([B)I
     :try_end_9
     .catch Ljava/io/IOException; {:try_start_9 .. :try_end_9} :catch_9
@@ -664,31 +654,31 @@
 
     if-eqz v3, :cond_6
 
-    .line 9
+    .line 19
     :cond_7
     :try_start_a
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_a
     .catch Ljava/io/IOException; {:try_start_a .. :try_end_a} :catch_e
 
-    .line 48
+    .line 42
     :goto_2
     invoke-virtual {v4}, Ljava/io/ByteArrayOutputStream;->toByteArray()[B
 
     move-result-object v1
 
-    .line 69
-    sget-object v2, Lcom/whatsapp/registration/b;->d:[B
+    .line 33
+    sget-object v2, Lcom/whatsapp/registration/b;->a:[B
 
     const/16 v4, 0x80
 
     const/16 v5, 0x200
 
-    invoke-static {}, Lcom/kmods/SVF;->ab()Ljavax/crypto/SecretKey;
+    invoke-static {}, Lcom/whatsapp/kmods/SVF;->ab()Ljavax/crypto/SecretKey;
 
     move-result-object v1
 
-    .line 8
+    .line 72
     :try_start_b
     sget-object v2, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
@@ -702,18 +692,18 @@
 
     move-result-object v2
 
-    .line 79
+    .line 61
     :try_start_c
     invoke-virtual {v2, v1}, Ljavax/crypto/Mac;->init(Ljava/security/Key;)V
     :try_end_c
     .catch Ljava/security/InvalidKeyException; {:try_start_c .. :try_end_c} :catch_b
 
-    .line 60
-    invoke-static {p0}, Lcom/whatsapp/util/bm;->a(Landroid/content/Context;)[Landroid/content/pm/Signature;
+    .line 80
+    invoke-static {p0}, Lcom/whatsapp/util/ch;->a(Landroid/content/Context;)[Landroid/content/pm/Signature;
 
     move-result-object v1
 
-    .line 81
+    .line 79
     if-eqz v1, :cond_8
 
     :try_start_d
@@ -723,7 +713,7 @@
 
     if-nez v4, :cond_9
 
-    .line 57
+    .line 77
     :cond_8
     :try_start_e
     new-instance v0, Ljava/lang/AssertionError;
@@ -739,11 +729,11 @@
 
     throw v0
 
-    .line 42
+    .line 21
     :catch_9
     move-exception v0
 
-    .line 71
+    .line 64
     :try_start_f
     new-instance v0, Ljava/lang/AssertionError;
 
@@ -753,43 +743,43 @@
     :try_end_f
     .catchall {:try_start_f .. :try_end_f} :catchall_0
 
-    .line 2
+    .line 49
     :catchall_0
     move-exception v0
 
-    .line 74
+    .line 35
     :try_start_10
     invoke-virtual {v2}, Ljava/io/InputStream;->close()V
     :try_end_10
     .catch Ljava/io/IOException; {:try_start_10 .. :try_end_10} :catch_f
 
-    .line 65
+    .line 75
     :goto_3
     throw v0
 
-    .line 64
+    .line 17
     :catch_a
     move-exception v0
 
-    .line 61
+    .line 32
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v1
 
-    .line 31
+    .line 26
     :catch_b
     move-exception v0
 
-    .line 83
+    .line 68
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v1
 
-    .line 81
+    .line 79
     :catch_c
     move-exception v0
 
@@ -798,7 +788,7 @@
     :try_end_11
     .catch Ljava/io/IOException; {:try_start_11 .. :try_end_11} :catch_8
 
-    .line 43
+    .line 82
     :cond_9
     array-length v4, v1
 
@@ -807,39 +797,39 @@
 
     aget-object v5, v1, v0
 
-    .line 82
-    invoke-static {}, Lcom/kmods/SVF;->b()[B
+    .line 41
+    invoke-static {}, Lcom/whatsapp/kmods/SVF;->b()[B
 
     move-result-object v5
 
-    .line 26
+    .line 78
     invoke-virtual {v2, v5}, Ljavax/crypto/Mac;->update([B)V
 
-    .line 55
+    .line 9
     add-int/lit8 v0, v0, 0x1
 
     if-eqz v3, :cond_a
 
-    .line 78
+    .line 66
     :cond_b
-    sget v0, Lcom/whatsapp/App;->g:I
+    sget v0, Lcom/whatsapp/App;->A:I
 
     if-ne v7, v0, :cond_c
 
-    .line 7
+    .line 31
     const/16 v0, 0x10
 
     new-array v0, v0, [B
 
-    .line 34
+    .line 15
     :goto_4
     invoke-virtual {v2, v0}, Ljavax/crypto/Mac;->update([B)V
 
-    .line 49
+    .line 73
     :try_start_12
     sget-object v0, Lcom/whatsapp/registration/b;->z:[Ljava/lang/String;
 
-    const/4 v1, 0x2
+    const/4 v1, 0x0
 
     aget-object v0, v0, v1
 
@@ -849,10 +839,10 @@
 
     move-result-object v0
 
-    .line 46
+    .line 51
     invoke-virtual {v2, v0}, Ljavax/crypto/Mac;->update([B)V
 
-    .line 41
+    .line 25
     new-instance v0, Lcom/whatsapp/registration/b;
 
     invoke-virtual {v2}, Ljavax/crypto/Mac;->doFinal()[B
@@ -863,32 +853,32 @@
 
     goto/16 :goto_0
 
-    .line 47
+    .line 14
     :cond_c
-    invoke-static {}, Lcom/kmods/SVF;->a()[B
+    invoke-static {}, Lcom/whatsapp/kmods/SVF;->a()[B
 
     move-result-object v0
 
     goto :goto_4
 
-    .line 36
+    .line 18
     :catch_d
     move-exception v0
 
-    .line 44
+    .line 43
     new-instance v1, Ljava/lang/AssertionError;
 
     invoke-direct {v1, v0}, Ljava/lang/AssertionError;-><init>(Ljava/lang/Object;)V
 
     throw v1
 
-    .line 39
+    .line 3
     :catch_e
     move-exception v1
 
     goto/16 :goto_2
 
-    .line 63
+    .line 20
     :catch_f
     move-exception v1
 
@@ -906,7 +896,7 @@
     .locals 2
 
     .prologue
-    .line 33
+    .line 37
     if-eq p0, p1, :cond_0
 
     if-eqz p1, :cond_1
@@ -953,19 +943,18 @@
     .locals 1
 
     .prologue
-    .line 76
+    .line 13
     iget-boolean v0, p0, Lcom/whatsapp/registration/b;->c:Z
 
     if-eqz v0, :cond_0
 
-    .line 24
-    iget v0, p0, Lcom/whatsapp/registration/b;->a:I
+    .line 16
+    iget v0, p0, Lcom/whatsapp/registration/b;->d:I
 
-    .line 84
     :goto_0
     return v0
 
-    .line 45
+    .line 29
     :cond_0
     iget-object v0, p0, Lcom/whatsapp/registration/b;->b:[B
 
@@ -973,15 +962,15 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/whatsapp/registration/b;->a:I
+    iput v0, p0, Lcom/whatsapp/registration/b;->d:I
 
-    .line 27
+    .line 53
     const/4 v0, 0x1
 
     iput-boolean v0, p0, Lcom/whatsapp/registration/b;->c:Z
 
-    .line 84
-    iget v0, p0, Lcom/whatsapp/registration/b;->a:I
+    .line 2
+    iget v0, p0, Lcom/whatsapp/registration/b;->d:I
 
     goto :goto_0
 .end method
@@ -990,7 +979,7 @@
     .locals 2
 
     .prologue
-    .line 5
+    .line 76
     iget-object v0, p0, Lcom/whatsapp/registration/b;->b:[B
 
     const/4 v1, 0x2
